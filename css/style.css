@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://i.pinimg.com/564x/04/e8/a6/04e8a6873fcf2312aa8ad84f02970c43.jpg);
+    background-size: cover;
+}
+
+/* flex utilities */
+header{
+    background-color: rgba(11, 45, 75, 0.438);
+    height: 100px;
+}
+
+.heading{
+    color: aliceblue;
+    text-align: center;
+    padding: 0, 15px;
+}
+
+h1{
+    padding: 20px 0px;
+}
+
+.cont{
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+section{
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+#buyTicket{
+    top: 30px;
+    background-color: rgb(111, 16, 16);
+
+}
+
+#boughtTicket{
+    background-color: rgb(111, 16, 16);
+    width: 65%;
+
+}
+
+#passengerData{
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 9px;
+}
+
+#passengerData p{
+    width: 48%;
+}
+
+input{
+    width: 45%;
+    margin: 0, 0;
+}
+

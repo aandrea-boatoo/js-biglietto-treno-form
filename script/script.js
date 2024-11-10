@@ -7,12 +7,12 @@ const inputLastName = document.getElementById('lastName');
 const inputKm = document.getElementById('km');
 const inputAge = document.getElementById('age');
 const button = document.querySelector("button");
-const firstNamePassenger = document.getElementById("firstNamePassenger")
-const lastNamePassenger = document.getElementById("lastNamePassenger")
-const kmPassenger = document.getElementById("kmPassenger")
-const agePassenger = document.getElementById("agePassenger")
-const pricePassenger = document.getElementById("pricePassenger")
-
+const firstNamePassenger = document.getElementById("firstNamePassenger");
+const lastNamePassenger = document.getElementById("lastNamePassenger");
+const kmPassenger = document.getElementById("kmPassenger");
+const agePassenger = document.getElementById("agePassenger");
+const pricePassenger = document.getElementById("pricePassenger");
+const ticket = document.getElementById("boughtTicket");
 // definire valore degli input
 
 button.addEventListener('click', acquisto);
@@ -26,11 +26,15 @@ function acquisto (event){
     // ticketPrice(km, price);
     event.preventDefault();
     // sectionBought.classList.remove('d-none')
-    firstNamePassenger.innerHTML = `${firstName}`;
-    lastNamePassenger.innerHTML = `${lastName}`;
-    kmPassenger.innerHTML = `${km}`;
-    agePassenger.innerHTML = `${age}`;
-    pricePassenger.innerHTML = ticketPrice(km, price, age);
+    firstNamePassenger.innerHTML +=`${firstName}`;
+    lastNamePassenger.innerHTML += `${lastName}`;
+    kmPassenger.innerHTML += `${km} km`;
+    agePassenger.innerHTML += `${age} anni`;
+    pricePassenger.innerHTML += ticketPrice(km, price, age);
+    pricePassenger.innerHTML += " euro";
+
+    ticket.classList.remove("d-none");
+
 
 }
 

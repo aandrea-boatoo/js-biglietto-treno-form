@@ -6,28 +6,36 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>ClelItalia</title>
+    <title>TreniExpress</title>
 </head>
 <body>
-    <section id="buyTicket">
-        <form id="shopInfo">
-            <input type="text" id="firstName" placeholder="Inserire nome...">
-            <input type="text" id="lastName" placeholder="Inserire cognome...">
-            <input type="number" id="km" placeholder="Inserire km da percorrere">
-            <input type="number" id="age" placeholder="inserire eta'">
-            <button type="submit">Acquista Biglietto</button>
-        </form>
-    </section>
-    <section id="boughtTicket">
-        <div>
-            <p id="firstNamePassenger"></p>
-            <p id="lastNamePassenger"></p>
-            <p id="kmPassenger"></p>
-            <p id="agePassenger"></p>
-            <p id="pricePassenger"></p>
+    <header>
+        <h1 class="heading">TreniExpress</h1>
+    </header>
+    <div class="cont position-relative d-flex flex-wrap justify-content-center">
 
-        </div>
-    </section>
+        <section id="buyTicket">
+            <form id="shopInfo" class="d-flex flex-wrap justify-content-around gap-2">
+                <h2 class="heading">Acquista il tuo Biglietto</h2>
+                <input type="text" id="firstName" placeholder="Inserire nome...">
+                <input type="text" id="lastName" placeholder="Inserire cognome...">
+                <input type="number" id="km" placeholder="Inserire km da percorrere">
+                <input type="number" id="age" placeholder="inserire eta'">
+                <button type="submit">Acquista Biglietto</button>
+            </form>
+        </section>
+        <section id="boughtTicket" class="d-none">
+            <h2 class="heading"> Biglietto Tratta Unica</h2>
+            <div id="passengerData" class="d-flex flex-wrap justify-content-around gap-2">
+                <p id="firstNamePassenger">Nome Passeggero: </p>
+                <p id="lastNamePassenger">Cognome Passeggero: <br> </p>
+                <p id="kmPassenger">Lunghezza tratta: <br> </p>
+                <p id="agePassenger">Eta' Passeggero: <br> </p>
+                <p id="pricePassenger">Prezzo complessivo: <br> </p>
+                <p></p>
+            </div>
+        </section>
+    </div>
     <script src="script/script.js"></script>
 </body>
 </html>
