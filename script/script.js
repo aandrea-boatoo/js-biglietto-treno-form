@@ -13,7 +13,6 @@ const kmPassenger = document.getElementById("kmPassenger");
 const agePassenger = document.getElementById("agePassenger");
 const pricePassenger = document.getElementById("pricePassenger");
 const ticket = document.getElementById("boughtTicket");
-// definire valore degli input
 
 button.addEventListener('click', acquisto);
 
@@ -32,15 +31,8 @@ function acquisto (event){
     agePassenger.innerHTML += `${age} anni`;
     pricePassenger.innerHTML += ticketPrice(km, price, age);
     pricePassenger.innerHTML += " euro";
-
     ticket.classList.remove("d-none");
-
-
 }
-
-
-
-
 
 function ticketPrice(km, price, age){
     let ticketPrice = km*price
